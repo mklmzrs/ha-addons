@@ -1,0 +1,93 @@
+name: Smart Home YVR
+slug: smart-home-yvr
+description: NestJS API add-on for Home Assistant integrations
+url: https://github.com/mklmzrs/bnb/tree/master/apps/ha-addons/smart-home-yvr
+version: "1.0.11"
+
+startup: services
+boot: auto
+legacy: true
+
+arch:
+  - aarch64
+  - amd64
+
+ports:
+  3000/tcp: 3000
+
+environment:
+  PORT: "3000"
+  NODE_ENV: "production"
+  API_KEY: "{api_key}"
+
+  # Azure Storage
+  AZ_STORAGE_ACCOUNT_NAME: "{az_storage_account_name}"
+  AZ_STORAGE_ACCOUNT_KEY: "{az_storage_account_key}"
+
+  # Twilio
+  OWNER_PHONE_NUMBER: "{owner_phone_number}"
+  TWILIO_ACCOUNT_ID: "{twilio_account_id}"
+  TWILIO_API_KEY: "{twilio_api_key}"
+  TWILIO_SMS_FROM: "{twilio_sms_from}"
+  TWILIO_WHATSAPP_FROM: "{twilio_whatsapp_from}"
+
+  # Property
+  HOSPITABLE_PROPERTY_ID: "{hospitable_property_id}"
+  DOOR_CODE_SLOT: "{door_code_slot}"
+  STAY_TEMP: "{stay_temp}"
+  AWAY_TEMP: "{away_temp}"
+
+  # SmartThings
+  SMARTTHINGS_TOKEN: "{smartthings_token}"
+  SMARTTHINGS_LOCK_DEVICE_ID: "{smartthings_lock_device_id}"
+  SMARTTHINGS_CLIMATE_DEVICE_ID: "{smartthings_climate_device_id}"
+
+  # Reolink camera configuration
+  REOLINK_BASE_URL: "{reolink_base_url}"
+  REOLINK_USER: "{reolink_user}"
+  REOLINK_PASSWORD: "{reolink_password}"
+  REOLINK_BLOB_CONTAINER: "{reolink_blob_container}"
+
+options:
+  api_key: "change-me"
+  az_storage_account_name: "your-storage-account"
+  az_storage_account_key: ""
+  reolink_base_url: "http://camera.local/cgi-bin/api.cgi"
+  reolink_user: "admin"
+  reolink_password: ""
+  reolink_blob_container: "reolink"
+  smartthings_token: ""
+  owner_phone_number: "+10000000000"
+  twilio_account_id: "ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  twilio_api_key: ""
+  twilio_sms_from: "+10000000000"
+  twilio_whatsapp_from: "whatsapp:+10000000000"
+  hospitable_property_id: "replace-with-your-property-id"
+  door_code_slot: 27
+  stay_temp: 74
+  away_temp: 79
+  smartthings_lock_device_id: ""
+  smartthings_climate_device_id: ""
+
+schema:
+  api_key: str
+  az_storage_account_name: str
+  az_storage_account_key: password
+  reolink_base_url: str?
+  reolink_user: str?
+  reolink_password: password?
+  reolink_blob_container: str?
+  smartthings_token: password?
+  owner_phone_number: str?
+  twilio_account_id: str?
+  twilio_api_key: password?
+  twilio_sms_from: str?
+  twilio_whatsapp_from: str?
+  hospitable_property_id: str?
+  door_code_slot: int?
+  stay_temp: int?
+  away_temp: int?
+  smartthings_lock_device_id: str?
+  smartthings_climate_device_id: str?
+
+image: ghcr.io/mklmzrs/smart-home-yvr
