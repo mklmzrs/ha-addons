@@ -1,6 +1,6 @@
-# smart-home-yvr add-on
+# Smart Home YVR add-on
 
-This directory contains Home Assistant add-on metadata for the smart-home-yvr service.
+This directory contains Home Assistant add-on metadata for the Smart Home YVR service.
 
 The add-on runs the prebuilt image:
 
