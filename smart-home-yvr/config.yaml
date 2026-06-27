@@ -50,6 +50,7 @@ environment:
 
   # AI
   ANTHROPIC_API_KEY: "{anthropic_api_key}"
+  ANTHROPIC_MODEL: "{anthropic_model}"
 
 options:
   api_key: "change-me"
@@ -72,6 +73,7 @@ options:
   smartthings_lock_device_id: ""
   smartthings_climate_device_id: ""
   anthropic_api_key: ""
+  anthropic_model: "claude-haiku-4-5-20251001"
 
 schema:
   api_key: str
@@ -94,5 +96,6 @@ schema:
   smartthings_lock_device_id: str?
   smartthings_climate_device_id: str?
   anthropic_api_key: password?
+  anthropic_model: str?
 
 image: ghcr.io/mklmzrs/smart-home-yvr
