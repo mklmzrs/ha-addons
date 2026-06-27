@@ -48,6 +48,9 @@ environment:
   REOLINK_PASSWORD: "{reolink_password}"
   REOLINK_BLOB_CONTAINER: "{reolink_blob_container}"
 
+  # AI
+  ANTHROPIC_API_KEY: "{anthropic_api_key}"
+
 options:
   api_key: "change-me"
   az_storage_account_name: "your-storage-account"
@@ -68,6 +71,7 @@ options:
   away_temp: 79
   smartthings_lock_device_id: ""
   smartthings_climate_device_id: ""
+  anthropic_api_key: ""
 
 schema:
   api_key: str
@@ -89,5 +93,6 @@ schema:
   away_temp: int?
   smartthings_lock_device_id: str?
   smartthings_climate_device_id: str?
+  anthropic_api_key: password?
 
 image: ghcr.io/mklmzrs/smart-home-yvr
