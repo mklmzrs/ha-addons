@@ -1,3 +1,8 @@
+# Changelog
+
+## 1.0.20
+- Bump version to 1.0.20.
+
 ## 1.0.19
 - Sync smart-home-yvr add-on version to 1.0.19.
 
