@@ -38,12 +38,12 @@ environment:
   AWAY_TEMP: "{away_temp}"
 
   # SmartThings
-  SMARTTHINGS_CLIENT_ID="{smartthings_client_id}"
-  SMARTTHINGS_CLIENT_SECRET="{smartthings_client_secret}"
-  SMARTTHINGS_REDIRECT_URI="{smartthings_redirect_uri}"
-  SMARTTHINGS_SCOPE="{smartthings_scope}"
-  SMARTTHINGS_LOCK_DEVICE_ID="{smartthings_lock_device_id}"
-  SMARTTHINGS_CLIMATE_DEVICE_ID="{smartthings_climate_device_id}"
+  SMARTTHINGS_CLIENT_ID: "{smartthings_client_id}"
+  SMARTTHINGS_CLIENT_SECRET: "{smartthings_client_secret}"
+  SMARTTHINGS_REDIRECT_URI: "{smartthings_redirect_uri}"
+  SMARTTHINGS_SCOPE: "{smartthings_scope}"
+  SMARTTHINGS_LOCK_DEVICE_ID: "{smartthings_lock_device_id}"
+  SMARTTHINGS_CLIMATE_DEVICE_ID: "{smartthings_climate_device_id}"
 
   # Reolink camera configuration
   REOLINK_BASE_URL: "{reolink_base_url}"
