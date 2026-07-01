@@ -38,9 +38,12 @@ environment:
   AWAY_TEMP: "{away_temp}"
 
   # SmartThings
-  SMARTTHINGS_TOKEN: "{smartthings_token}"
-  SMARTTHINGS_LOCK_DEVICE_ID: "{smartthings_lock_device_id}"
-  SMARTTHINGS_CLIMATE_DEVICE_ID: "{smartthings_climate_device_id}"
+  SMARTTHINGS_CLIENT_ID="{smartthings_client_id}"
+  SMARTTHINGS_CLIENT_SECRET="{smartthings_client_secret}"
+  SMARTTHINGS_REDIRECT_URI="{smartthings_redirect_uri}"
+  SMARTTHINGS_SCOPE="{smartthings_scope}"
+  SMARTTHINGS_LOCK_DEVICE_ID="{smartthings_lock_device_id}"
+  SMARTTHINGS_CLIMATE_DEVICE_ID="{smartthings_climate_device_id}"
 
   # Reolink camera configuration
   REOLINK_BASE_URL: "{reolink_base_url}"
@@ -56,11 +59,16 @@ options:
   api_key: "change-me"
   az_storage_account_name: "your-storage-account"
   az_storage_account_key: ""
+  smartthings_client_id: ""
+  smartthings_client_secret: ""
+  smartthings_redirect_uri: ""
+  smartthings_scope: ""
+  smartthings_lock_device_id: ""
+  smartthings_climate_device_id: ""
   reolink_base_url: "http://camera.local/cgi-bin/api.cgi"
   reolink_user: "admin"
   reolink_password: ""
   reolink_blob_container: "reolink"
-  smartthings_token: ""
   owner_phone_number: "+10000000000"
   twilio_account_id: "ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   twilio_api_key: ""
@@ -70,8 +78,6 @@ options:
   door_code_slot: 27
   stay_temp: 74
   away_temp: 79
-  smartthings_lock_device_id: ""
-  smartthings_climate_device_id: ""
   anthropic_api_key: ""
   anthropic_model: "claude-haiku-4-5-20251001"
 
@@ -83,7 +89,6 @@ schema:
   reolink_user: str?
   reolink_password: password?
   reolink_blob_container: str?
-  smartthings_token: password?
   owner_phone_number: str?
   twilio_account_id: str?
   twilio_api_key: password?
@@ -93,6 +98,10 @@ schema:
   door_code_slot: int?
   stay_temp: int?
   away_temp: int?
+  smartthings_client_id: str?
+  smartthings_client_secret: password?
+  smartthings_redirect_uri: str?
+  smartthings_scope: str?
   smartthings_lock_device_id: str?
   smartthings_climate_device_id: str?
   anthropic_api_key: password?
