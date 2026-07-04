@@ -2,7 +2,7 @@ name: Smart Home YVR
 slug: smart-home-yvr
 description: NestJS API add-on for Home Assistant integrations
 url: https://github.com/mklmzrs/bnb/tree/master/apps/ha-addons/smart-home-yvr
-version: "1.0.26"
+version: "1.0.27"
 
 startup: services
 boot: auto
