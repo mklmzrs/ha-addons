@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.29
+- Bump version to 1.0.29.
+
+
 ## 1.0.28
 - Bump version to 1.0.28.
 
